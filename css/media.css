@@ -1,0 +1,100 @@
+.container {
+  margin: 0 auto;
+  padding-inline: 12px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  #navbar .nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  #navbar .nav-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  #meet-section .cards .card {
+    width: 100%;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+  }
+  .four-left {
+    width: 31%;
+  }
+  .footer-left {
+    width: 70 %;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  #meet-section .cards .card {
+    width: 31%;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+  }
+  .four-left {
+    width: 50%;
+  }
+  .footer-left {
+    width: 40 %;
+  }
+  .main-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  #meet-section .cards .card {
+    width: 31%;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .footer-left {
+    width: 40 %;
+  }
+  .main-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  #meet-section .cards .card {
+    width: 31%;
+  }
+  .footer-left {
+    width: 40 %;
+  }
+  .main-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
