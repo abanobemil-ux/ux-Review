@@ -1,100 +1,243 @@
-.container {
-  margin: 0 auto;
-  padding-inline: 12px;
-  width: 100%;
+@media screen and (min-width:1024px) {
+    #nav-bar {
+        position: fixed;
+        left: 5%;
+        right: 5%;
+        top: 10px;
+        z-index: 99999;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 16px;
+        padding: 12px 24px;
+    }
+
+    #nav-bar .flex-nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    #nav-bar .flex-nav-bar .sub-now {
+        background-color: #FFD15B;
+        color: black;
+        padding: 8px 16px;
+        border-radius: 999999999px;
+        border: 2px solid black;
+        font-weight: 700;
+        transition: transform .3s;
+    }
+
+    #nav-bar .flex-nav-bar ul {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+
+    #nav-bar .flex-nav-bar .sub-now:hover {
+        transform: translate(2px, 2px);
+    }
+
+    #hero {
+        background-color: #FFF085;
+        border-bottom: 4px solid black;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    #hero .slide-one,
+    .slide-two {
+        width: 50%;
+
+    }
+
+    #hero .slide-one {
+        padding-right: 30px;
+    }
+
+    #hero .slide-two {
+        padding-left: 30px;
+        align-self: center;
+    }
+
+    #hero .flex-postion {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .rotate {
+        transform: rotate(2deg);
+    }
+
+    #hero .slide-two .img-1 {
+        height: 400px;
+
+    }
+
+    #hero .shape3 {
+        width: 100px;
+        height: 100px;
+        background-color: #E9E491;
+        rotate: 50deg;
+        position: absolute;
+        left: 450px;
+        bottom: 140px;
+        z-index: 1;
+    }
+
+    #articles .slide1-articales .status {
+        flex-direction: row;
+    }
+
+    #articles .slide1-articales .status .width-active {
+        width: 50%;
+    }
+
+    #articles .slide1-articales .head-flex {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 42px;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    #articles .slide1-articales .head-flex span {
+        padding: 8px 16px;
+        background-color: black;
+        box-shadow: 4px 4px black;
+        color: white;
+        font-weight: 700;
+        transform: rotate(3deg);
+        display: inline-block;
+    }
+
+    #authors .members {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 30px;
+    }
+
+    #authors .members .person {
+        width: calc(50% - 30px);
+    }
+
+    #community .flex-comm {
+        display: flex;
+        flex-direction: row;
+        column-gap: 50px;
+    }
+
+    #footer .flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 50px;
+    }
+
+    #footer .slide1-footer {
+        flex: 2 1;
+    }
+
+    #footer .slide2-footer {
+        flex: 1 2;
+    }
+
+    #footer .slide3-footer {
+        flex: 2 1;
+    }
+
+    .copyright p {
+        align-self: center;
+    }
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-  #navbar .nav-bar {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  #navbar .nav-links ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  #meet-section .cards .card {
-    width: 100%;
-  }
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: row; */
-  }
-  .four-left {
-    width: 31%;
-  }
-  .footer-left {
-    width: 70 %;
-  }
-}
+@media screen and (min-width:1280px) {
+    .contain {
+        width: 80%;
+    }
 
-@media screen and (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-  #meet-section .cards .card {
-    width: 31%;
-  }
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: row; */
-  }
-  .four-left {
-    width: 50%;
-  }
-  .footer-left {
-    width: 40 %;
-  }
-  .main-footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-}
+    #nav-bar {
+        left: 10%;
+        right: 10%;
+    }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-  #meet-section .cards .card {
-    width: 31%;
-  }
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  .footer-left {
-    width: 40 %;
-  }
-  .main-footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
+    .slide2-articales .trend {
+        margin-top: 0;
+    }
 
-@media screen and (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-  }
-  #meet-section .cards .card {
-    width: 31%;
-  }
-  .footer-left {
-    width: 40 %;
-  }
-  .main-footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
+
+    .articles-flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 30px;
+    }
+
+    #articles .slide1-articales {
+        width: calc(70% - 30px);
+    }
+
+    #articles .slide2-articales {
+        width: 30%;
+        align-self: flex-start;
+        position: sticky;
+        top: 90px;
+    }
+
+    #articles .slide1-articales .status .width-active {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    #articles .slide1-articales .head-feature {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .content-feature {
+        flex: 1 1;
+        padding: 20px;
+    }
+
+    .content-feature1 {
+        display: flex;
+        padding: 20px;
+    }
+
+    #articles .slide1-articales .type-feature {
+        margin-top: 0;
+    }
+
+    #authors .members {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 30px;
+    }
+
+    #authors .members .person {
+        width: calc(33.33% - 30px);
+    }
+
+    .copyright .flex-foot {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .copyright .flex-foot p {
+        flex: 2 0;
+    }
+
+    .copyright .flex-foot .span-foot {
+        flex: 1 0;
+    }
 }
